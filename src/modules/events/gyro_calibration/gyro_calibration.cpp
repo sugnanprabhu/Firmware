@@ -39,9 +39,8 @@
 
 #include <px4_config.h>
 #include "gyro_calibration.h"
-#include "calibration_messages.h"
-#include "calibration_routines.h"
-#include "commander_helper.h"
+#include <systemlib/calibration/calibration_messages.h>
+#include <systemlib/calibration/calibration_routines.h>
 
 #include <px4_posix.h>
 #include <px4_defines.h>

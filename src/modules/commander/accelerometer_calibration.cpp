@@ -123,8 +123,6 @@
 // FIXME: Can some of these headers move out with detect_ move?
 
 #include "accelerometer_calibration.h"
-#include "calibration_messages.h"
-#include "calibration_routines.h"
 #include "commander_helper.h"
 
 #include <px4_defines.h>
@@ -146,6 +144,8 @@
 #include <systemlib/param/param.h>
 #include <systemlib/err.h>
 #include <systemlib/mavlink_log.h>
+#include <systemlib/calibration/calibration_messages.h>
+#include <systemlib/calibration/calibration_routines.h>
 #include <uORB/topics/vehicle_attitude.h>
 #include <uORB/topics/sensor_correction.h>
 

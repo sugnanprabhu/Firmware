@@ -52,6 +52,8 @@
 #include <string.h>
 #include <mathlib/mathlib.h>
 
+#include <commander/commander_helper.h>
+
 #include <uORB/topics/vehicle_command.h>
 #include <uORB/topics/sensor_combined.h>
 
@@ -59,7 +61,6 @@
 
 #include "calibration_routines.h"
 #include "calibration_messages.h"
-#include "commander_helper.h"
 
 int sphere_fit_least_squares(const float x[], const float y[], const float z[],
 			     unsigned int size, unsigned int max_iterations, float delta, float *sphere_x, float *sphere_y, float *sphere_z,

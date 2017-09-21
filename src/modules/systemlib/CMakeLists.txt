@@ -46,6 +46,7 @@ set(SRCS
 	circuit_breaker.cpp
 	battery.cpp
 	hysteresis/hysteresis.cpp
+	calibration/calibration_routines.cpp
 	)
 
 if(${OS} STREQUAL "nuttx")

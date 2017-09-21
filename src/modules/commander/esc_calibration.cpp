@@ -40,8 +40,6 @@
  */
 
 #include "esc_calibration.h"
-#include "calibration_messages.h"
-#include "calibration_routines.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -60,6 +58,8 @@
 #include <uORB/uORB.h>
 #include <drivers/drv_hrt.h>
 #include <systemlib/mavlink_log.h>
+#include <systemlib/calibration/calibration_messages.h>
+#include <systemlib/calibration/calibration_routines.h>
 
 int check_if_batt_disconnected(orb_advert_t *mavlink_log_pub) {
 	struct battery_status_s battery;

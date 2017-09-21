@@ -39,8 +39,6 @@
 
 #include "mag_calibration.h"
 #include "commander_helper.h"
-#include "calibration_routines.h"
-#include "calibration_messages.h"
 
 #include <px4_defines.h>
 #include <px4_posix.h>
@@ -60,6 +58,8 @@
 #include <systemlib/mavlink_log.h>
 #include <systemlib/param/param.h>
 #include <systemlib/err.h>
+#include <systemlib/calibration/calibration_messages.h>
+#include <systemlib/calibration/calibration_routines.h>
 #include <uORB/topics/sensor_combined.h>
 
 static const char *sensor_name = "mag";

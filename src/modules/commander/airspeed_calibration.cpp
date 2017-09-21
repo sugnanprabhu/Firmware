@@ -37,8 +37,6 @@
  */
 
 #include "airspeed_calibration.h"
-#include "calibration_messages.h"
-#include "calibration_routines.h"
 #include "commander_helper.h"
 
 #include <px4_defines.h>
@@ -56,6 +54,8 @@
 #include <systemlib/param/param.h>
 #include <systemlib/err.h>
 #include <systemlib/airspeed.h>
+#include <systemlib/calibration/calibration_messages.h>
+#include <systemlib/calibration/calibration_routines.h>
 
 static const char *sensor_name = "airspeed";
 
